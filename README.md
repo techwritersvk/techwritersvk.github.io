@@ -1,5 +1,5 @@
 # janhalacek.com
-![GitHub Pages](https://github.com/zahradnik-io/zahradnik-io.github.io/workflows/GitHub%20Pages/badge.svg)
+[![GitHub Pages](https://github.com/techwritersvk/techwritersvk.github.io/actions/workflows/github-pages.yml/badge.svg)](https://github.com/techwritersvk/techwritersvk.github.io/actions/workflows/github-pages.yml)
 
 In this repository, I host the code for my personal blog. It's built using [GitHub Actions](https://github.com/features/actions) and hosted on [GitHub Pages](https://pages.github.com/).
 
