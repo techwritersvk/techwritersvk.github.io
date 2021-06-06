@@ -25,7 +25,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "@narative/gatsby-theme-novela",
+      resolve: "@zahradnik-io/gatsby-theme-novela",
       options: {
         contentPosts: "content/posts",
         contentAuthors: "content/authors",
@@ -40,14 +40,38 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Novela by Narative`,
-        short_name: `Novela`,
+        name: `Ján Haláček | Blog`,
+        short_name: `Ján Haláček`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `standalone`,
         icon: `src/assets/favicon.png`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-cookiehub-banner`,
+      options: {
+        cookieHubId: "4968b982",
+        cookieHubV2Api: true,
+        categories: [
+          {
+            categoryName: 'analytics',
+            cookieName: 'gatsby-plugin-google-analytics-gdpr_cookies-enabled'
+          }
+        ]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics-gdpr`,
+      options: {
+        trackingId: "G-WC6N4CL3J0",
+        anonymizeIP: true,
+        autoStartWithCookiesEnabled: false,
+      },
+    },
+    {
+    	resolve: "gatsby-plugin-sitemap"
     },
     {
       resolve: `gatsby-plugin-netlify-cms`,
